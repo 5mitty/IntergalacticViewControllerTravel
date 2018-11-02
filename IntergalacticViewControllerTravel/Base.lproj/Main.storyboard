@@ -16,7 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-YN-zgw">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58u-Pt-3w4">
+                                <rect key="frame" x="132" y="241" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Red Dwarf">
+                                    <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <segue destination="02T-zj-sKn" kind="show" id="r9o-Bi-YqH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BFz-YN-zgw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4im-ND-JKb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BFz-YN-zgw" secondAttribute="bottom" id="7rG-SA-e7X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BFz-YN-zgw" secondAttribute="trailing" id="I0f-Ed-1c5"/>
+                            <constraint firstItem="BFz-YN-zgw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jJS-7S-AfB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Inter-Galactic Travel Inc." id="aEN-SN-3Tv"/>
@@ -59,4 +81,7 @@
             <point key="canvasLocation" x="-26.399999999999999" y="133.74384236453201"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="images-1" width="284" height="177"/>
+    </resources>
 </document>
