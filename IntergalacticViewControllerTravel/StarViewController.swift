@@ -9,24 +9,22 @@
 import UIKit
 
 class StarViewController: UIViewController {
+    
+    var isRedDwarf: Bool!
 
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        if isRedDwarf {
+            imageView.image = UIImage(named: "images")
+        } else {
+            imageView.image = UIImage(named: "29269994444_92d8c59825_b")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

@@ -29,7 +29,7 @@
                                     <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <segue destination="02T-zj-sKn" kind="show" id="r9o-Bi-YqH"/>
+                                    <segue destination="02T-zj-sKn" kind="show" identifier="starSegue" id="r9o-Bi-YqH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqA-WP-8d4">
@@ -45,18 +45,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Q40-vK-ERv" appends="YES" id="Yna-Vt-7cc"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Inter-Galactic Travel Inc." id="aEN-SN-3Tv"/>
+                    <connections>
+                        <outlet property="blueDwarfButton" destination="LqA-WP-8d4" id="s1S-su-Qzi"/>
+                        <outlet property="redDwarfButton" destination="58u-Pt-3w4" id="pWZ-as-QBa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="Q40-vK-ERv">
-                    <connections>
-                        <segue destination="02T-zj-sKn" kind="show" identifier="starSegue" id="mwv-Kh-ViM"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="729" y="134"/>
         </scene>
@@ -107,7 +103,4 @@
         <image name="images" width="225" height="225"/>
         <image name="images-1" width="284" height="177"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="mwv-Kh-ViM"/>
-    </inferredMetricsTieBreakers>
 </document>
